@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		ul{
+			list-style: none;
+		}
+		a{
+			text-decoration: none;
+		}
+		.banner{
+			position: relative;
+			width: 1226px;
+			height: 460px;
+			margin: 0 auto;
+			margin-top: 100px;
+			background: url(banner.jpg) no-repeat center;
+			background-size: 100%;
+		}
+		.banner .aside{
+			width: 234px;
+			height: 460px;
+			background-color: #555555;
+			overflow: hidden;
+		}
+		.banner .arr{
+			position: absolute;
+			display: block;
+			width: 40px;
+			height: 80px;
+			line-height: 80px;
+			text-align: center;
+			font-size: 36px;
+			color: #D6D6D6;
+			/*background-color: pink;*/
+		}
+		/*定位 解决  块状元素的  垂直居中问题*/
+		.banner .arr.arr-l{
+			left: 234px;
+			/*往下多移动了自身的一半*/
+			top: 50%;
+			margin-top: -40px;
+		}
+		.banner .arr.arr-r{
+			right: 0;
+			top: 50%;
+			margin-top: -40px;
+		}
+		.banner .arr:hover{
+			color: white;
+			background-color: #555;
+		}
+		.banner .dots{
+			position: absolute;
+			right: 30px;
+			bottom: 40px;
+			height: 8px;
+		}
+		.banner .dots .dot-item{
+			float: left;
+			width: 8px;
+			height: 8px;
+			background-color: #B4B4B4;
+			border-radius: 50%;
+			margin-right: 10px;
+			cursor: pointer;
+		}
+		.banner .dots .dot-item.mr0{
+			margin-right: 0;
+		}
+		.dots .dot-item a{
+			display: block;
+			width: 4px;
+			height: 4px;
+			background-color: #8D8D8D;
+			border-radius: 50%;
+			margin: 2px;
+		}
+		.dots .dot-item:hover a{
+			background-color: #fff;
+		}
+		.aside .category{
+			width: 100%;
+			height: 420px;
+			margin: 20px 0;
+		}
+		.aside .category .category-item{
+			width: 234px;
+			height: 42px;
+			line-height: 42px;
+		}
+		.category .category-item a{
+			display: block;
+			width: 100%;
+			height: 100%;
+			font-size: 14px;
+			color: white;
+			text-indent: 30px;
+			background: url(arr.png) no-repeat 198px 13px;
+		}
+		.category .category-item a:hover{
+			background-color: #FF6700;
+		}
+	</style>
+</head>
+<body>
+	<div class="banner">
+		<div class="aside">
+			<ul class="category">
+				<li class="category-item">
+					<a href="#">手机 电话卡</a>
+				</li>
+				<li class="category-item">
+					<a href="#">手机 电话卡</a>
+				</li>
+				<li class="category-item">
+					<a href="#">手机 电话卡</a>
+				</li>
+				<li class="category-item">
+					<a href="#">手机 电话卡</a>
+				</li>
+				<li class="category-item">
+					<a href="#">手机 电话卡</a>
+				</li>
+				<li class="category-item">
+					<a href="#">手机 电话卡</a>
+				</li>
+				<li class="category-item">
+					<a href="#">手机 电话卡</a>
+				</li>
+				<li class="category-item">
+					<a href="#">手机 电话卡</a>
+				</li>
+				<li class="category-item">
+					<a href="#">手机 电话卡</a>
+				</li>
+				<li class="category-item">
+					<a href="#">手机 电话卡</a>
+				</li>
+			</ul>
+		</div>
+		<a href="#" class="arr arr-r">></a>
+		<a href="#" class="arr arr-l"><</a>
+		<ul class="dots">
+			<li class="dot-item">
+				<a href="#"></a>
+			</li>
+			<li class="dot-item">
+				<a href="#"></a>
+			</li>
+			<li class="dot-item">
+				<a href="#"></a>
+			</li>
+			<li class="dot-item">
+				<a href="#"></a>
+			</li>
+			<li class="dot-item mr0">
+				<a href="#"></a>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

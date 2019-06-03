@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+
+		}
+		.box{
+			/*绝对定位*/
+			/*距离 body 左边 上边的距离*/
+			/*position: absolute;
+			left: 100px;
+			top: 100px;*/
+			position: relative;
+			/*子绝父相（子类想要 相对于 父类  做 绝对定位，但是父类我没有定位属性，name我们给父类添加  一个  相对定位 position：releative）*/
+			width: 300px;
+			height: 300px;
+			background-color: red;
+			margin: 100px;
+		}
+		.box .inner-box{
+			/*距离 红色盒子 的  左边  和  上边*/
+			position: absolute;
+			left: 50px;
+			top: 50px;
+			width: 100px;
+			height: 100px;
+			background-color: green;
+		}
+		.box span{
+			/*display: inline;*/
+			position: absolute;
+			left: 150px;
+			top: 150px;
+			background-color: #333;
+			width: 100px;
+			height: 100px;
+		}
+		/*绝对定位 到底是  相对谁(参照物)  做定位*/
+
+		/*元素相对于离他最近的祖先定位元素进行定位或者html元素。*/
+	</style>
+</head>
+<body>
+	<div>
+		<div class="box">
+			<div class="inner-box">
+				
+			</div>
+			<span>首页</span>
+		</div>
+	</div>
+	
+
+
+</body>
+</html>

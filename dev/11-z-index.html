@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.box1{
+			position: absolute;
+			left: 100px;
+			top: 100px;
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			z-index: 1;
+		}
+		.box2{
+			position: absolute;
+			left: 120px;
+			top: 120px;
+			width: 50px;
+			height: 50px;
+			background-color: green;
+			/*z-index:2;*/
+		}
+		.box3{
+			position: absolute;
+			left:150px;
+			top: 150px;
+			width: 30px;
+			height: 30px;
+			background-color: orange;
+			z-index: 2;
+		}
+		.inner-box{
+			position: absolute;
+			left: 60px;
+			top: 60px;
+			width: 80px;
+			height: 80px;
+			background-color: pink;
+			z-index: 999;
+		}
+		/*子类元素设置多大的层级 ,都*/
+		/*有定位属性,才能设置z-index*/
+	</style>
+</head>
+<body>
+	<div class="box1">
+		<div class="inner-box">
+			
+		</div>
+	</div>
+	<div class="box2">
+		
+	</div>
+	<div class="box3">
+		
+	</div>
+</body>
+</html>
